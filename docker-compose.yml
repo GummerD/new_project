@@ -22,6 +22,11 @@ services:
     ports:
       - '30004:5432'
 
+  adminer:
+    image: adminer
+    ports:
+      - 8080:8080
+
   webserver:
     image: 'nginx:alpine'
     working_dir: /app
