@@ -1,16 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{asset('asset/css/first_task.css')}}">
-    <title>Первое задание RegExp</title>
-</head>
-<body>
-    <header>
-        <h1>Страница с первым заданием</h1>
-    </header>
+@extends('index')
+
+@section('title')
+    {{__('RegExp Упражнения')}}
+@endsection
+
+
+
+@section('content')
+
     <main>
         <div class="div_clue">
             <button class="button_clue">Подсказка</button>
@@ -48,11 +45,12 @@
             <button class ="button_task_3">Проверить 3-ое задание</button>
             <br>
             <p class="out_task_3"></p>
-        </div>
-        
-        <a href="{{route('/')}}">Вернуться на главную страницу</a>
+        </div>       
+ 
     </main>
-    <footer></footer>
-    <script src="{{asset('asset/js/first_task_example.js')}}"></script>
-</body>
-</html>
+
+@endsection
+
+
+   
+ {{-- <script src="{{asset('asset/js/first_task_example.js')}}"></script> --}}

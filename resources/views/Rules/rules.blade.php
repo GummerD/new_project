@@ -1,20 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('index')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{ asset('asset/css/first_page.css') }}">
-    <title>Сервис для изучения RegExp</title>
-</head>
+@section('title')
+    
+@endsection
 
-<body>
-    <header>
-        <h1>Первая страница сервиса по изучению и тренировки с RegExp</h1>
-    </header>
-    <main>
-        <div class="title">
+@section('content')
+
+<main class="container">
+
+    <div class="title">
+        <p>Rules</p>
+        <p>level</p>
+    </div>
+
+    <div class="text_field_light">
+        <div class="text_rules">
             <h2>Что такое регулярыне выражения</h2>
             <p>
                 Регулярное выражение – способ записи текстовых шаблонов. По
@@ -36,7 +36,7 @@
         </div>
         <div class="ref-info">
 
-            <h2> Основных правил языка регулярных выражений:</h2>
+            <h2> Основные правилa языка регулярных выражений:</h2>
 
             <ul class="ref-info-examples">
                 <li>/abc/ Идущие подряд символы abc</li>
@@ -62,14 +62,9 @@
             </ul>
 
         </div>
-        
-        <a href="{{ route('first_task') }}"> Перейти к первому заданию</a>
+    </div>
 
-    </main>
 
-    <footer>
+</main>
 
-    </footer>
-</body>
-
-</html>
+@endsection
